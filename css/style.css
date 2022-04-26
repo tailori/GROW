@@ -1,0 +1,360 @@
+@import url(./fonts.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+body{
+    font-family: 'rob';
+}
+
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header__list{
+    display: flex;
+    list-style: none;
+    font-family: 'rob';
+    font-weight: 400;
+}
+
+.header__link a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    transition: .3s ease-out;
+    position: relative;
+}
+
+.header__link a::after{
+    content: "";
+    background: #ED8E00;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: -15px;
+    left: 0;
+    border-radius: 23px 10px 0px 0px;
+    transition: .5s linear;
+    transform: scale(0);
+}
+
+ .header__link a:hover::after{
+    display: block;
+    transition: .2s linear;
+    transform: scale(1);
+}
+
+.header__link a:hover{
+    color: rgb(252, 174, 6);
+    transition: .3s ease-out;
+    font-size: 20px;
+}
+
+.header__content img{
+    cursor: pointer;
+}
+
+.header__content p{
+    font-family: 'rob';
+    font-weight: 400;
+    font-size: 14x;
+    transition: .3s ease-out;
+    position: relative;
+}
+
+.header__content p::after{
+    content: "";
+    background: #ED8E00;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    bottom: -15px;
+    left: 0;
+    border-radius: 23px 10px 0px 0px;
+    transition: .5s linear;
+    transform: scale(0);
+}
+
+ .header__content p:hover::after{
+    display: block;
+    transition: .2s linear;
+    transform: scale(1);
+}
+
+.header__content p:hover{
+    color: rgb(252, 174, 6);
+    transition: .3s ease-out;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.header__desk img{
+    width: 100%;
+}
+
+.header__desk-list{
+    text-align: center;
+    position: relative;
+    bottom: 350px;
+}
+
+.header__desk-list h1{
+    color: white;
+    font-family: 'rob';
+    font-weight: 400;
+    font-size: 43px;
+}
+
+.header__desk-list p{
+    color: white;
+    font-family: 'rob';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 20px;
+}
+
+/* ===HEADER FINISHED=== */
+
+/* ===MAIN STARTS=== */
+
+
+.main__design{
+    text-align: center;
+    justify-content:center ;
+}
+
+
+
+.main__pads{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(max-content, 750px);
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.featured__title{
+    text-align: center;
+}
+
+.featured__content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(max-content);
+    margin-top: 30px;
+}
+
+/* Home Office Inspiration */
+
+.home__office{
+    margin-top: 95px;
+    height: 500px;
+    background-image: url(../img/Home\ office.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.home__office-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__office-content h1{
+    color: white;
+    font-size: 66px;
+}
+
+.home__office-content p{
+    color: white;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.home__office-content h4{
+    color: white;
+    font-size: 14px;
+}
+
+/* Made The Hard Way */
+
+
+.hard__way-content{
+    display: flex;
+    margin-top: 116px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hard__way-content p{
+    margin-top: 22px;
+    margin-bottom: 22px;
+    color: #A0A0A0;
+    text-align: center;
+    width: 777px;
+}
+
+/* Make Work Meaningful */
+
+.make__work-content{
+    display: flex;
+    margin-top: 38px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.make__work-content h1{
+    text-align: center;
+}
+
+.make__work-content-title{
+    text-align: center;
+    margin-top: 23px;
+}
+
+.make__work-content-text{
+    color: #E4E4E4;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: start;
+}
+
+.make__work-images{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(max-content, 270px);
+    grid-gap: 25px;
+}
+
+
+/* === Make Work Meaningful finished ===*/
+
+
+
+/* === hope starts === */
+
+.hope{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.hope__content{
+    text-align: center;
+}
+
+.hope__content-title{
+    font-size: 34px;
+    margin-bottom: 45px;
+}
+
+.hope__content-text{
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.hope__block{
+    height: 400px;
+    color: white;
+    background: #9AA8B1;
+    margin-top: 60px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hope__block h1{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 43px;
+}
+
+.hope__block p{
+    font-size: 14px;
+}
+
+/* === hope finished === */
+
+.footer{
+    height: 345px;
+    background: #F9F9F9;
+    display: flex;
+}
+
+.footer__content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.footer__list li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.footer__link{
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer__signup{
+    margin-left: 20px;
+}
+
+.footer__signup h1{
+    color: black;
+    font-size: 22px;
+}
+
+.footer__signup p{
+    width: 350px;
+    color: #A0A0A0;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 25px;
+    margin-bottom: 90px;
+}
+
+.footer__signup-line{
+    width: 320px;
+    height: 1px;
+    background: #A0A0A0;
+}
+
+.go__up{
+    width: 82px;
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
